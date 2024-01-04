@@ -1,0 +1,26 @@
+.total {
+    margin-bottom: 52px;
+}
+/* .total-data {
+    height: 120px;
+    width: 380px;
+    border: 1px solid rebeccapurple;
+} */
+
+.card-total-content {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.d-icon {
+    flex-grow: 1;
+    font-size: 50px;
+}
+
+.d-data {
+    display: flex;
+    flex-flow: column nowrap;
+    color: #666;
+    font-family: "Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif";
+    font-size: 20px;
+}

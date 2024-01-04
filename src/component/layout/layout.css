@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #f5f5f5;
+}
+
+.core {
+    display: flex;
+    height: 100%;
+    flex-flow: row nowrap;
+}
+
+.sider {
+    flex-shrink: 0;     /* 如果context属性的flex方向改为row的话, 这里的宽度就会被撑出去, 所以还是使用shrink保险点 */
+    width: 200px;
+    background-color: aqua;
+}
+
+.context {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    background-color: #f0f2f5;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 70px;
+    background-color: #fff;
+}
+
+.h-content {
+    color: #97a8be;
+    padding-left: 8px;
+}
+
+.h-menu {
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.scrollbar {
+    margin-top: 45px;
+    padding-left: 32px;
+    flex-shrink: 0;
+    height: 30px;
+    background-color: #f0f2f5;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 70px;
+    background-color: #f0f2f5;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #fff;
+    margin: 32px;
+    padding: 32px;
+}
+
+
+
+.item {
+    height: 300px;
+    width: 500px;
+    border: 1px solid rebeccapurple;
+}
